@@ -1,0 +1,10 @@
+Assumptions
+1. Calculator expects the user inputs in meters
+2. For better accuracy, velocity should be calculated at the mid of each section at 0.6*depth to compensate ground friction.
+3. Calculator rejects the user inputs if number of sections are less than 5. It auto populates Interval field based on minimum 5 sections.
+4. Calculator rejects the user inputs if number of sections are more than 200. 
+5. Depth measurement needs to be taken at equal intervals.
+6. Each section is considered as trapezoid.
+7. Application uses double (8-bytes) instead of float (4-bytes) which is supported specially by compiler.
+8. Application uses interations over recursions for calculations
+9. Code comments are not added to improve code-readability.
